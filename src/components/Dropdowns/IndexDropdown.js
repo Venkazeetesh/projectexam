@@ -19,7 +19,9 @@ const IndexDropdown = () => {
   return (
     <>
       <a
-        className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+        className="hover:text-blueGray-500 text-
+        
+         px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
         href="#pablo"
         ref={btnDropdownRef}
         onClick={(e) => {
@@ -27,7 +29,20 @@ const IndexDropdown = () => {
           dropdownPopoverShow ? closeDropdownPopover() : openDropdownPopover();
         }}
       >
-        Demo Pages
+        Home
+      </a>
+      <a
+        className="hover:text-blueGray-500 text-
+        
+         px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+        href="#pablo"
+        ref={btnDropdownRef}
+        onClick={(e) => {
+          e.preventDefault();
+          dropdownPopoverShow ? closeDropdownPopover() : openDropdownPopover();
+        }}
+      >
+        Test
       </a>
       <div
         ref={popoverDropdownRef}
@@ -37,8 +52,7 @@ const IndexDropdown = () => {
         }
       >
         <span
-          className={
-            "text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-blueGray-400"
+          className={"text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-blueGray-400"
           }
         >
           Admin Layout
